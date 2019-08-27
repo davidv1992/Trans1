@@ -1,0 +1,4 @@
+*.o
+*.d
+t1asm/t1asm
+Sim1/sim
