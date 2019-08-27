@@ -1,0 +1,90 @@
+	MOV 5, A
+	MOV A, [4]
+	MOV 6, A
+	MOV A, [5]
+	MOV A, [6]
+	MOV 1, A
+	MOV A, [7]
+	MOV 0x45, A
+	MOV A, [3]
+INITLOOP:
+	MOV A, [0]
+	MOV R1, A
+	JMP DS
+R1:	MOV [6], A
+	DEC A, A
+	MOV A, [6]
+	MOV 0x8, B
+	ADD B
+	MOV [0], A
+	MOV A, [B]
+	MOV [6], B
+	DEC A, A
+	JNZB INITLOOP
+
+GAMELOOP:
+	MOV [4], A
+	INC A, A
+	MOV [5], B
+	SUB B
+	JNZ NC
+	MOV 0, A
+NC: MOV A, [4]	
+	MOV 8, B
+	ADD B
+	MOV B, [6]
+	MOV [B], A
+	MOV A, [0]
+	MOV R2, A
+	JMP DS
+R2:	MOV [0x48], A
+	MOV [7], B
+	JZA EI
+	SHR A, A
+	MOV 0x7, B
+	JZA EI
+	SHR A, A
+	MOV 0x1, B
+	JZA EI
+	SHR A, A
+	MOV 0x70, B
+	JZA EI
+	MOV 0x10, B
+EI:	MOV B, [7]
+	MOV [3], A
+	ADD A
+	MOV 0x77, B
+	AND A
+	MOV A, [3]
+	MOV [6], B
+	MOV A, [B]
+	MOV A, [0]
+	MOV R3, A
+	JMP DS
+R3: SLP
+	JMP GAMELOOP
+
+DS:	MOV A, [2]	
+	MOV [0], A
+	SHR A, A
+	SHR A, A
+	SHR A, A
+	SHR A, A
+	MOV 0x40, B
+	ADD A
+	MOV A, [1]
+	MOV [0], A
+	MOV 0xF, B
+	AND A
+	MOV 1, B
+	JZA L2
+L1:	SHL B, B
+	DEC A, A
+	JNZA L1
+L2:	MOV [1], A
+	MOV [A], A
+	XOR A
+	MOV [1], B
+	MOV A, [B]
+	MOV [2], A
+	JMP [A]
