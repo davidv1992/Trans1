@@ -83,7 +83,7 @@ word ALU::output(word A, word B, word Asel, word Bsel, word OUTsel, word FLAGen)
 		break;
 	case 4:
 		RES = (IA+IB) << 1;
-		if (ROT && carry) RES |= 1;
+		if (!ROT && carry) RES |= 1;
 		if (FLAGen) {
 			if ((IA+IB) & 0x80) carry = 1;
 			else carry = 0;
@@ -91,7 +91,7 @@ word ALU::output(word A, word B, word Asel, word Bsel, word OUTsel, word FLAGen)
 		break;
 	case 5:
 		RES = (IA+IB) >> 1;
-		if (ROT && carry) RES |= 0x80;
+		if (!ROT && carry) RES |= 0x80;
 		if (FLAGen) {
 			if ((IA+IB) & 0x01) carry = 1;
 			else carry = 0;
