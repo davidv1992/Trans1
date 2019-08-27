@@ -858,4 +858,19 @@ F 3 "" H 1150 1900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 2750 900 
+$Comp
+L 1N4148 D1
+U 1 1 5A5F8122
+P 2550 1650
+F 0 "D1" H 2550 1750 50  0000 C CNN
+F 1 "1N4148" H 2550 1550 50  0000 C CNN
+F 2 "footprints:D_default" H 2550 1475 50  0001 C CNN
+F 3 "" H 2550 1650 50  0001 C CNN
+	1    2550 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 1500 2750 1500
+Connection ~ 2750 1500
+Connection ~ 2550 1800
 $EndSCHEMATC
