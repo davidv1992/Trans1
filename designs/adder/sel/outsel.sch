@@ -1,0 +1,196 @@
+EESchema Schematic File Version 2
+LIBS:core
+LIBS:power
+LIBS:sel-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 25
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 1350 2100 0    60   Input ~ 0
+~A~
+Text HLabel 1350 2500 0    60   Input ~ 0
+~B~
+Text HLabel 2900 1500 2    60   Input ~ 0
+Out
+Text HLabel 2900 1700 2    60   Input ~ 0
+AndSel
+Text HLabel 1350 1700 0    60   Input ~ 0
+OrSel
+$Comp
+L 2N7000 Q201
+U 1 1 5B659033
+P 1550 1700
+AR Path="/5B65D08A/5B659033" Ref="Q201"  Part="1" 
+AR Path="/5B660636/5B659033" Ref="Q301"  Part="1" 
+AR Path="/5B66064C/5B659033" Ref="Q401"  Part="1" 
+AR Path="/5B661A72/5B659033" Ref="Q501"  Part="1" 
+AR Path="/5B661A88/5B659033" Ref="Q601"  Part="1" 
+AR Path="/5B661A9E/5B659033" Ref="Q701"  Part="1" 
+AR Path="/5B661AB4/5B659033" Ref="Q801"  Part="1" 
+AR Path="/5B65E5ED/5B659033" Ref="Q901"  Part="1" 
+F 0 "Q901" H 1750 1700 50  0000 L CNN
+F 1 "2N7000" H 1750 1775 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 1750 1625 50  0001 L CIN
+F 3 "" H 1550 1700 50  0001 L CNN
+	1    1550 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7000 Q203
+U 1 1 5B659070
+P 1550 2100
+AR Path="/5B65D08A/5B659070" Ref="Q203"  Part="1" 
+AR Path="/5B660636/5B659070" Ref="Q303"  Part="1" 
+AR Path="/5B66064C/5B659070" Ref="Q403"  Part="1" 
+AR Path="/5B661A72/5B659070" Ref="Q503"  Part="1" 
+AR Path="/5B661A88/5B659070" Ref="Q603"  Part="1" 
+AR Path="/5B661A9E/5B659070" Ref="Q703"  Part="1" 
+AR Path="/5B661AB4/5B659070" Ref="Q803"  Part="1" 
+AR Path="/5B65E5ED/5B659070" Ref="Q903"  Part="1" 
+F 0 "Q903" H 1750 2100 50  0000 L CNN
+F 1 "2N7000" H 1750 2175 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 1750 2025 50  0001 L CIN
+F 3 "" H 1550 2100 50  0001 L CNN
+	1    1550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7000 Q206
+U 1 1 5B6590EB
+P 1550 2500
+AR Path="/5B65D08A/5B6590EB" Ref="Q206"  Part="1" 
+AR Path="/5B660636/5B6590EB" Ref="Q306"  Part="1" 
+AR Path="/5B66064C/5B6590EB" Ref="Q406"  Part="1" 
+AR Path="/5B661A72/5B6590EB" Ref="Q506"  Part="1" 
+AR Path="/5B661A88/5B6590EB" Ref="Q606"  Part="1" 
+AR Path="/5B661A9E/5B6590EB" Ref="Q706"  Part="1" 
+AR Path="/5B661AB4/5B6590EB" Ref="Q806"  Part="1" 
+AR Path="/5B65E5ED/5B6590EB" Ref="Q906"  Part="1" 
+F 0 "Q906" H 1750 2500 50  0000 L CNN
+F 1 "2N7000" H 1750 2575 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 1750 2425 50  0001 L CIN
+F 3 "" H 1550 2500 50  0001 L CNN
+	1    1550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2N7000 Q202
+U 1 1 5B65910E
+P 2700 1700
+AR Path="/5B65D08A/5B65910E" Ref="Q202"  Part="1" 
+AR Path="/5B660636/5B65910E" Ref="Q302"  Part="1" 
+AR Path="/5B66064C/5B65910E" Ref="Q402"  Part="1" 
+AR Path="/5B661A72/5B65910E" Ref="Q502"  Part="1" 
+AR Path="/5B661A88/5B65910E" Ref="Q602"  Part="1" 
+AR Path="/5B661A9E/5B65910E" Ref="Q702"  Part="1" 
+AR Path="/5B661AB4/5B65910E" Ref="Q802"  Part="1" 
+AR Path="/5B65E5ED/5B65910E" Ref="Q902"  Part="1" 
+F 0 "Q902" H 2900 1700 50  0000 L CNN
+F 1 "2N7000" H 2900 1775 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 2900 1625 50  0001 L CIN
+F 3 "" H 2700 1700 50  0001 L CNN
+	1    2700 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 2N7000 Q205
+U 1 1 5B659191
+P 2950 2100
+AR Path="/5B65D08A/5B659191" Ref="Q205"  Part="1" 
+AR Path="/5B660636/5B659191" Ref="Q305"  Part="1" 
+AR Path="/5B66064C/5B659191" Ref="Q405"  Part="1" 
+AR Path="/5B661A72/5B659191" Ref="Q505"  Part="1" 
+AR Path="/5B661A88/5B659191" Ref="Q605"  Part="1" 
+AR Path="/5B661A9E/5B659191" Ref="Q705"  Part="1" 
+AR Path="/5B661AB4/5B659191" Ref="Q805"  Part="1" 
+AR Path="/5B65E5ED/5B659191" Ref="Q905"  Part="1" 
+F 0 "Q905" H 3150 2100 50  0000 L CNN
+F 1 "2N7000" H 3150 2175 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 3150 2025 50  0001 L CIN
+F 3 "" H 2950 2100 50  0001 L CNN
+	1    2950 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 2N7000 Q204
+U 1 1 5B6591D2
+P 2250 2100
+AR Path="/5B65D08A/5B6591D2" Ref="Q204"  Part="1" 
+AR Path="/5B660636/5B6591D2" Ref="Q304"  Part="1" 
+AR Path="/5B66064C/5B6591D2" Ref="Q404"  Part="1" 
+AR Path="/5B661A72/5B6591D2" Ref="Q504"  Part="1" 
+AR Path="/5B661A88/5B6591D2" Ref="Q604"  Part="1" 
+AR Path="/5B661A9E/5B6591D2" Ref="Q704"  Part="1" 
+AR Path="/5B661AB4/5B6591D2" Ref="Q804"  Part="1" 
+AR Path="/5B65E5ED/5B6591D2" Ref="Q904"  Part="1" 
+F 0 "Q904" H 2450 2100 50  0000 L CNN
+F 1 "2N7000" H 2450 2175 50  0001 L CNN
+F 2 "footprints:TO-92-FET" H 2450 2025 50  0001 L CIN
+F 3 "" H 2250 2100 50  0001 L CNN
+	1    2250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2300 2850 2300
+Wire Wire Line
+	2350 1900 2850 1900
+Connection ~ 2600 1900
+Wire Wire Line
+	1650 1500 2900 1500
+$Comp
+L GND #PWR201
+U 1 1 5B6592B4
+P 2600 2300
+AR Path="/5B65D08A/5B6592B4" Ref="#PWR201"  Part="1" 
+AR Path="/5B660636/5B6592B4" Ref="#PWR301"  Part="1" 
+AR Path="/5B66064C/5B6592B4" Ref="#PWR401"  Part="1" 
+AR Path="/5B661A72/5B6592B4" Ref="#PWR501"  Part="1" 
+AR Path="/5B661A88/5B6592B4" Ref="#PWR601"  Part="1" 
+AR Path="/5B661A9E/5B6592B4" Ref="#PWR701"  Part="1" 
+AR Path="/5B661AB4/5B6592B4" Ref="#PWR801"  Part="1" 
+AR Path="/5B65E5ED/5B6592B4" Ref="#PWR901"  Part="1" 
+F 0 "#PWR901" H 2600 2050 50  0001 C CNN
+F 1 "GND" H 2600 2150 50  0000 C CNN
+F 2 "" H 2600 2300 50  0001 C CNN
+F 3 "" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR202
+U 1 1 5B6592D4
+P 1650 2700
+AR Path="/5B65D08A/5B6592D4" Ref="#PWR202"  Part="1" 
+AR Path="/5B660636/5B6592D4" Ref="#PWR302"  Part="1" 
+AR Path="/5B66064C/5B6592D4" Ref="#PWR402"  Part="1" 
+AR Path="/5B661A72/5B6592D4" Ref="#PWR502"  Part="1" 
+AR Path="/5B661A88/5B6592D4" Ref="#PWR602"  Part="1" 
+AR Path="/5B661A9E/5B6592D4" Ref="#PWR702"  Part="1" 
+AR Path="/5B661AB4/5B6592D4" Ref="#PWR802"  Part="1" 
+AR Path="/5B65E5ED/5B6592D4" Ref="#PWR902"  Part="1" 
+F 0 "#PWR902" H 1650 2450 50  0001 C CNN
+F 1 "GND" H 1650 2550 50  0000 C CNN
+F 2 "" H 1650 2700 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 2600 2300
+Connection ~ 1650 1900
+Connection ~ 1650 2300
+Connection ~ 2600 1500
+Text HLabel 2050 2100 0    60   Input ~ 0
+~A~
+Text HLabel 3150 2100 2    60   Input ~ 0
+~B~
+$EndSCHEMATC
