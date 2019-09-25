@@ -52,6 +52,11 @@ D 8x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol
 K dip switch
 $ENDCMP
 #
+$CMP LED
+D LED generic
+K led diode
+$ENDCMP
+#
 $CMP POT
 D Potentiometer
 K resistor variable
