@@ -9,11 +9,11 @@
 	MOV 3, A		#0x03
 	MOV A, [3]		#0x33
 # Extract lowest bit of [1]
-L1:	MOV [1], B 		#0x51			0x88
+L1:	MOV [1], B 		#0x51			0x48
 	SHR B, B		#0xE5
 	MOV B, [1]		#0x71
 	MOV [0], B		#0x50
-	JNC L2			#0x6A 0x91
+	JNC L2			#0x6A 0x51
 # Add [0] to results in [2]
 	MOV [2], A		#0x12
 	ADD A			#0x80

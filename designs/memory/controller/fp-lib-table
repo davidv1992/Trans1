@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri /home/david/Trans1/repo/footprints.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,844 @@
+EESchema Schematic File Version 2
+LIBS:core
+LIBS:power
+LIBS:core-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x02_Power J101
+U 1 1 61086414
+P 700 750
+F 0 "J101" H 700 850 50  0000 C CNN
+F 1 "Conn_01x02_Power" H 700 550 50  0001 C CNN
+F 2 "footprints:PH_1x2" H 600 750 50  0001 C CNN
+F 3 "" H 700 750 50  0001 C CNN
+	1    700  750 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 610864C9
+P 900 850
+F 0 "#PWR01" H 900 600 50  0001 C CNN
+F 1 "GND" H 900 700 50  0000 C CNN
+F 2 "" H 900 850 50  0001 C CNN
+F 3 "" H 900 850 50  0001 C CNN
+	1    900  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 61086509
+P 900 750
+F 0 "#PWR02" H 900 600 50  0001 C CNN
+F 1 "VCC" H 900 900 50  0000 C CNN
+F 2 "" H 900 750 50  0001 C CNN
+F 3 "" H 900 750 50  0001 C CNN
+	1    900  750 
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3250 600  650  950 
+U 610B1BA7
+F0 "StateRegister" 60
+F1 "stateregister.sch" 60
+F2 "C" I L 3250 700 60 
+F3 "S0" I R 3900 700 60 
+F4 "S1" I R 3900 800 60 
+F5 "S2" I R 3900 900 60 
+F6 "S3" I R 3900 1000 60 
+F7 "~S3" I R 3900 1450 60 
+F8 "~S2" I R 3900 1350 60 
+F9 "~S1" I R 3900 1250 60 
+F10 "~S0" I R 3900 1150 60 
+F11 "Reset" I L 3250 800 60 
+$EndSheet
+$Comp
+L Conn_01x01 J105
+U 1 1 610C0B73
+P 2800 700
+F 0 "J105" H 2800 800 50  0000 C CNN
+F 1 "Conn_01x01" H 2800 600 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 2700 700 50  0001 C CNN
+F 3 "" H 2800 700 50  0001 C CNN
+	1    2800 700 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J106
+U 1 1 610C0C1C
+P 2800 900
+F 0 "J106" H 2800 1000 50  0000 C CNN
+F 1 "Conn_01x01" H 2800 800 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 2700 900 50  0001 C CNN
+F 3 "" H 2800 900 50  0001 C CNN
+	1    2800 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J111
+U 1 1 610C4961
+P 5800 1000
+F 0 "J111" H 5800 1400 50  0000 C CNN
+F 1 "Conn_01x08" H 5800 500 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 5700 1300 50  0001 C CNN
+F 3 "" H 5800 1000 50  0001 C CNN
+	1    5800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J113
+U 1 1 6109149A
+P 6100 1000
+F 0 "J113" H 6100 1400 50  0000 C CNN
+F 1 "Conn_01x08" H 6100 500 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 6000 1300 50  0001 C CNN
+F 3 "" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 5750 550  0    60   ~ 0
+State bus\n
+Text Notes 5650 1900 0    60   ~ 0
+T control
+$Comp
+L Conn_01x01 J114
+U 1 1 61093549
+P 6500 1950
+F 0 "J114" H 6500 2050 50  0000 C CNN
+F 1 "Conn_01x01" H 6500 1850 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6400 1950 50  0001 C CNN
+F 3 "" H 6500 1950 50  0001 C CNN
+	1    6500 1950
+	1    0    0    -1  
+$EndComp
+Text Notes 6600 1950 0    60   ~ 0
+T write
+$Comp
+L Conn_01x01 J115
+U 1 1 6109360F
+P 6500 2150
+F 0 "J115" H 6500 2250 50  0000 C CNN
+F 1 "Conn_01x01" H 6500 2050 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6400 2150 50  0001 C CNN
+F 3 "" H 6500 2150 50  0001 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 6600 2150 0    60   ~ 0
+T addr
+$Comp
+L Conn_01x08 J107
+U 1 1 61096AC0
+P 3200 1750
+F 0 "J107" H 3200 2150 50  0000 C CNN
+F 1 "Conn_01x08" H 3200 1250 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 3100 2050 50  0001 C CNN
+F 3 "" H 3200 1750 50  0001 C CNN
+	1    3200 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J108
+U 1 1 61096CFB
+P 3200 2050
+F 0 "J108" H 3200 2450 50  0000 C CNN
+F 1 "Conn_01x08" H 3200 1550 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 3100 2350 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J109
+U 1 1 6109700E
+P 4200 1750
+F 0 "J109" H 4200 2150 50  0000 C CNN
+F 1 "Conn_01x08" H 4200 1250 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 4100 2050 50  0001 C CNN
+F 3 "" H 4200 1750 50  0001 C CNN
+	1    4200 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x08 J110
+U 1 1 61097015
+P 4200 2050
+F 0 "J110" H 4200 2450 50  0000 C CNN
+F 1 "Conn_01x08" H 4200 1550 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 4100 2350 50  0001 C CNN
+F 3 "" H 4200 2050 50  0001 C CNN
+	1    4200 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x01 J116
+U 1 1 6109942C
+P 6500 2350
+F 0 "J116" H 6500 2450 50  0000 C CNN
+F 1 "Conn_01x01" H 6500 2250 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6400 2350 50  0001 C CNN
+F 3 "" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+Text Notes 6600 2350 0    60   ~ 0
+T bus
+Text Notes 4550 1650 0    60   ~ 0
+~IR
+Text Notes 2850 1650 0    60   ~ 0
+IR
+$Comp
+L Conn_01x01 J112
+U 1 1 6109C27B
+P 5950 1650
+F 0 "J112" H 5950 1750 50  0000 C CNN
+F 1 "Conn_01x01" H 5950 1550 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 5850 1650 50  0001 C CNN
+F 3 "" H 5950 1650 50  0001 C CNN
+	1    5950 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 6050 1650 0    60   ~ 0
+IR write
+$Sheet
+S 5600 2300 700  900 
+U 6109D2BE
+F0 "Tbus" 60
+F1 "Tbus.sch" 60
+F2 "IR3" I L 5600 2550 60 
+F3 "IR2" I L 5600 2450 60 
+F4 "IR1" I L 5600 2350 60 
+F5 "~IR4" I L 5600 2750 60 
+F6 "IR5" I L 5600 2850 60 
+F7 "~IR8" I L 5600 3050 60 
+F8 "~S3" I L 5600 3150 60 
+F9 "T_BUS" I R 6300 2350 60 
+F10 "IR6" I L 5600 2950 60 
+F11 "IR4" I L 5600 2650 60 
+$EndSheet
+$Sheet
+S 5600 3400 700  1200
+U 610AE139
+F0 "jump" 60
+F1 "jump.sch" 60
+F2 "F1" I R 6300 3450 60 
+F3 "F2" I R 6300 3550 60 
+F4 "F3" I R 6300 3650 60 
+F5 "F4" I R 6300 3750 60 
+F6 "F5" I R 6300 3850 60 
+F7 "IR3" I L 5600 3850 60 
+F8 "~IR3" I L 5600 3950 60 
+F9 "IR2" I L 5600 3650 60 
+F10 "~IR2" I L 5600 3750 60 
+F11 "IR1" I L 5600 3450 60 
+F12 "~IR1" I L 5600 3550 60 
+F13 "IR8" I L 5600 4550 60 
+F14 "~IR6" I L 5600 4250 60 
+F15 "IR5" I L 5600 4150 60 
+F16 "~IR4" I L 5600 4050 60 
+F17 "IR7" I L 5600 4350 60 
+F18 "~IR7" I L 5600 4450 60 
+F19 "J" I R 6300 3950 60 
+F20 "~J" I R 6300 4050 60 
+$EndSheet
+$Sheet
+S 5600 4800 700  700 
+U 610AEFFC
+F0 "is_long" 60
+F1 "is_long.sch" 60
+F2 "~IR8" I L 5600 5450 60 
+F3 "IR6" I L 5600 5350 60 
+F4 "~IR5" I L 5600 5250 60 
+F5 "~IR3" I L 5600 5050 60 
+F6 "~IR2" I L 5600 4950 60 
+F7 "IR1" I L 5600 4850 60 
+F8 "IR4" I L 5600 5150 60 
+F9 "~LONG" I R 6300 4950 60 
+$EndSheet
+$Comp
+L Conn_01x01 J124
+U 1 1 610B55F4
+P 6750 3850
+F 0 "J124" H 6750 3950 50  0000 C CNN
+F 1 "Conn_01x01" H 6750 3750 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6650 3850 50  0001 C CNN
+F 3 "" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J123
+U 1 1 610B5959
+P 6750 3650
+F 0 "J123" H 6750 3750 50  0000 C CNN
+F 1 "Conn_01x01" H 6750 3550 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6650 3650 50  0001 C CNN
+F 3 "" H 6750 3650 50  0001 C CNN
+	1    6750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J122
+U 1 1 610B5AA4
+P 6750 3450
+F 0 "J122" H 6750 3550 50  0000 C CNN
+F 1 "Conn_01x01" H 6750 3350 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6650 3450 50  0001 C CNN
+F 3 "" H 6750 3450 50  0001 C CNN
+	1    6750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J121
+U 1 1 610B5BF1
+P 6750 3250
+F 0 "J121" H 6750 3350 50  0000 C CNN
+F 1 "Conn_01x01" H 6750 3150 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6650 3250 50  0001 C CNN
+F 3 "" H 6750 3250 50  0001 C CNN
+	1    6750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J120
+U 1 1 610B5D3C
+P 6750 3050
+F 0 "J120" H 6750 3150 50  0000 C CNN
+F 1 "Conn_01x01" H 6750 2950 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6650 3050 50  0001 C CNN
+F 3 "" H 6750 3050 50  0001 C CNN
+	1    6750 3050
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5600 5700 700  800 
+U 610D069E
+F0 "PC" 60
+F1 "PC.sch" 60
+F2 "~S1" I L 5600 6050 60 
+F3 "~S3" I L 5600 6450 60 
+F4 "~LONG" I R 6300 5950 60 
+F5 "J" I R 6300 5750 60 
+F6 "PEN" I R 6300 6150 60 
+F7 "S0" I L 5600 5750 60 
+F8 "S1" I L 5600 5950 60 
+F9 "S2" I L 5600 6150 60 
+F10 "S3" I L 5600 6350 60 
+F11 "~J" I R 6300 5850 60 
+F12 "DEN" I R 6300 6250 60 
+F13 "~S0" I L 5600 5850 60 
+F14 "~S2" I L 5600 6250 60 
+F15 "ADDR" I R 6300 6350 60 
+$EndSheet
+$Comp
+L Conn_01x01 J118
+U 1 1 610DC7BF
+P 6700 6250
+F 0 "J118" H 6700 6350 50  0000 C CNN
+F 1 "Conn_01x01" H 6700 6150 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6600 6250 50  0001 C CNN
+F 3 "" H 6700 6250 50  0001 C CNN
+	1    6700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J117
+U 1 1 610DC986
+P 6700 6050
+F 0 "J117" H 6700 6150 50  0000 C CNN
+F 1 "Conn_01x01" H 6700 5950 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6600 6050 50  0001 C CNN
+F 3 "" H 6700 6050 50  0001 C CNN
+	1    6700 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J119
+U 1 1 610DCB31
+P 6700 6450
+F 0 "J119" H 6700 6550 50  0000 C CNN
+F 1 "Conn_01x01" H 6700 6350 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 6600 6450 50  0001 C CNN
+F 3 "" H 6700 6450 50  0001 C CNN
+	1    6700 6450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1750 2350 800  1400
+U 610EA8DD
+F0 "mem" 60
+F1 "mem.sch" 60
+F2 "~S3" I R 2550 3600 60 
+F3 "IR8" I R 2550 3300 60 
+F4 "~IR6" I R 2550 3200 60 
+F5 "~IR5" I R 2550 3000 60 
+F6 "IR5" I R 2550 2900 60 
+F7 "IR4" I R 2550 2800 60 
+F8 "IR3" I R 2550 2600 60 
+F9 "~IR2" I R 2550 2500 60 
+F10 "~IR1" I R 2550 2400 60 
+F11 "IR6" I R 2550 3100 60 
+F12 "~S0" I R 2550 3400 60 
+F13 "~S2" I R 2550 3500 60 
+F14 "~LONG" I R 2550 3700 60 
+F15 "R" I L 1750 2400 60 
+F16 "~IR3" I R 2550 2700 60 
+F17 "W" I L 1750 2500 60 
+$EndSheet
+$Comp
+L Conn_01x01 J102
+U 1 1 61101857
+P 1400 2400
+F 0 "J102" H 1400 2500 50  0000 C CNN
+F 1 "Conn_01x01" H 1400 2300 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 1300 2400 50  0001 C CNN
+F 3 "" H 1400 2400 50  0001 C CNN
+	1    1400 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J103
+U 1 1 61101A7E
+P 1400 2600
+F 0 "J103" H 1400 2700 50  0000 C CNN
+F 1 "Conn_01x01" H 1400 2500 50  0001 C CNN
+F 2 "footprints:PH_1x1" H 1300 2600 50  0001 C CNN
+F 3 "" H 1400 2600 50  0001 C CNN
+	1    1400 2600
+	-1   0    0    -1  
+$EndComp
+$Sheet
+S 1750 3900 800  1250
+U 6110BB57
+F0 "bus" 60
+F1 "bus.sch" 60
+F2 "~IR1" I R 2550 4000 60 
+F3 "~IR2" I R 2550 4100 60 
+F4 "~IR3" I R 2550 4200 60 
+F5 "~IR4" I R 2550 4300 60 
+F6 "B1" I L 1750 4000 60 
+F7 "B2" I L 1750 4100 60 
+F8 "B3" I L 1750 4200 60 
+F9 "B4" I L 1750 4300 60 
+F10 "B5" I L 1750 4400 60 
+F11 "B6" I L 1750 4500 60 
+F12 "B7" I L 1750 4600 60 
+F13 "B8" I L 1750 4700 60 
+F14 "~S0" I R 2550 4700 60 
+F15 "~S1" I R 2550 4800 60 
+F16 "~S2" I R 2550 5000 60 
+F17 "~S3" I R 2550 5100 60 
+F18 "S2" I R 2550 4900 60 
+F19 "~IR8" I R 2550 4600 60 
+F20 "IR5" I R 2550 4400 60 
+F21 "~IR6" I R 2550 4500 60 
+$EndSheet
+Wire Wire Line
+	3000 900  3150 900 
+Wire Wire Line
+	3150 900  3150 800 
+Wire Wire Line
+	3150 800  3250 800 
+Wire Wire Line
+	3000 700  3250 700 
+Wire Wire Line
+	3900 700  5900 700 
+Wire Wire Line
+	3900 800  5900 800 
+Wire Wire Line
+	3900 900  5900 900 
+Wire Wire Line
+	3900 1000 5900 1000
+Wire Wire Line
+	5550 1400 5900 1400
+Wire Wire Line
+	5550 1450 5550 1400
+Wire Wire Line
+	3900 1450 5550 1450
+Wire Wire Line
+	3900 1350 5550 1350
+Wire Wire Line
+	5550 1350 5550 1300
+Wire Wire Line
+	5550 1300 5900 1300
+Wire Wire Line
+	5550 1200 5900 1200
+Wire Wire Line
+	5550 1250 5550 1200
+Wire Wire Line
+	3900 1250 5550 1250
+Wire Wire Line
+	3900 1150 5550 1150
+Wire Wire Line
+	5550 1150 5550 1100
+Wire Wire Line
+	5550 1100 5900 1100
+Connection ~ 5600 700 
+Connection ~ 5600 800 
+Connection ~ 5600 900 
+Connection ~ 5600 1000
+Connection ~ 5600 1100
+Connection ~ 5600 1200
+Connection ~ 5600 1300
+Connection ~ 5600 1400
+Wire Wire Line
+	3200 1950 3200 5150
+Wire Wire Line
+	3400 1950 3400 5350
+Wire Wire Line
+	3500 1950 3500 4350
+Wire Wire Line
+	3600 1950 3600 4550
+Wire Wire Line
+	4000 1950 4000 4950
+Wire Wire Line
+	4100 1950 4100 5050
+Wire Wire Line
+	4300 1950 4300 5250
+Wire Wire Line
+	4500 1950 4500 4450
+Wire Wire Line
+	4600 1950 4600 5450
+Wire Wire Line
+	4750 700  4750 5750
+Connection ~ 4750 700 
+Wire Wire Line
+	4850 800  4850 5950
+Connection ~ 4850 800 
+Connection ~ 4950 900 
+Connection ~ 5050 1000
+Wire Wire Line
+	5200 1150 5200 5850
+Connection ~ 5200 1150
+Wire Wire Line
+	5300 1250 5300 6050
+Connection ~ 5300 1250
+Wire Wire Line
+	5400 1350 5400 6250
+Connection ~ 5400 1350
+Connection ~ 5500 1450
+Connection ~ 4600 2250
+Connection ~ 4400 2250
+Connection ~ 3300 2250
+Connection ~ 3100 2250
+Connection ~ 4200 2250
+Connection ~ 3000 2250
+Connection ~ 2900 2250
+Wire Wire Line
+	5750 1650 4750 1650
+Connection ~ 4750 1650
+Wire Wire Line
+	6300 1950 4950 1950
+Connection ~ 4950 1950
+Wire Wire Line
+	6300 2150 5050 2150
+Connection ~ 5050 2150
+Wire Wire Line
+	3100 2550 5600 2550
+Connection ~ 3100 2550
+Wire Wire Line
+	5050 1000 5050 6350
+Wire Wire Line
+	4950 900  4950 6150
+Wire Wire Line
+	3000 2450 5600 2450
+Connection ~ 3000 2450
+Wire Wire Line
+	2900 2350 5600 2350
+Connection ~ 2900 2350
+Wire Wire Line
+	3300 2850 5600 2850
+Connection ~ 3300 2850
+Wire Wire Line
+	3400 2950 5600 2950
+Connection ~ 3400 2250
+Wire Wire Line
+	5600 3050 4600 3050
+Connection ~ 4600 3050
+Wire Wire Line
+	4200 2750 5600 2750
+Connection ~ 4200 2750
+Wire Wire Line
+	3200 2650 5600 2650
+Connection ~ 3200 2250
+Wire Wire Line
+	5600 3150 5500 3150
+Wire Wire Line
+	2900 3450 5600 3450
+Wire Wire Line
+	3900 3550 5600 3550
+Connection ~ 3900 2250
+Wire Wire Line
+	3000 3650 5600 3650
+Wire Wire Line
+	4000 3750 5600 3750
+Connection ~ 4000 2250
+Wire Wire Line
+	3100 3850 5600 3850
+Wire Wire Line
+	4100 3950 5600 3950
+Connection ~ 4100 2250
+Wire Wire Line
+	4200 4050 5600 4050
+Wire Wire Line
+	3300 4150 5600 4150
+Wire Wire Line
+	4400 4250 5600 4250
+Wire Wire Line
+	3500 4350 5600 4350
+Connection ~ 3500 2250
+Wire Wire Line
+	3600 4550 5600 4550
+Connection ~ 3600 2250
+Wire Wire Line
+	4500 4450 5600 4450
+Connection ~ 4500 2250
+Wire Wire Line
+	6300 3850 6550 3850
+Wire Wire Line
+	6300 3750 6500 3750
+Wire Wire Line
+	6500 3750 6500 3650
+Wire Wire Line
+	6500 3650 6550 3650
+Wire Wire Line
+	6300 3650 6450 3650
+Wire Wire Line
+	6450 3650 6450 3450
+Wire Wire Line
+	6450 3450 6550 3450
+Wire Wire Line
+	6300 3550 6400 3550
+Wire Wire Line
+	6400 3550 6400 3250
+Wire Wire Line
+	6400 3250 6550 3250
+Wire Wire Line
+	6300 3450 6350 3450
+Wire Wire Line
+	6350 3450 6350 3050
+Wire Wire Line
+	6350 3050 6550 3050
+Wire Wire Line
+	3900 1950 3900 4000
+Wire Wire Line
+	4200 1950 4200 4300
+Wire Wire Line
+	4400 1950 4400 4500
+Wire Wire Line
+	3300 1950 3300 4400
+Wire Wire Line
+	3100 1950 3100 3850
+Wire Wire Line
+	3000 1950 3000 3650
+Wire Wire Line
+	2900 1950 2900 4850
+Wire Wire Line
+	2900 4850 5600 4850
+Connection ~ 2900 3450
+Wire Wire Line
+	4000 4950 5600 4950
+Connection ~ 4000 3750
+Wire Wire Line
+	4100 5050 5600 5050
+Connection ~ 4100 3950
+Wire Wire Line
+	3200 5150 5600 5150
+Connection ~ 3200 2650
+Wire Wire Line
+	4300 5250 5600 5250
+Connection ~ 4300 2250
+Wire Wire Line
+	3400 5350 5600 5350
+Connection ~ 3400 2950
+Wire Wire Line
+	4600 5450 5600 5450
+Wire Wire Line
+	5500 1450 5500 6450
+Wire Wire Line
+	6300 3950 6350 3950
+Wire Wire Line
+	6350 3950 6350 5750
+Wire Wire Line
+	6350 5750 6300 5750
+Wire Wire Line
+	6300 5850 6400 5850
+Wire Wire Line
+	6400 5850 6400 4050
+Wire Wire Line
+	6400 4050 6300 4050
+Wire Wire Line
+	6300 4950 6450 4950
+Wire Wire Line
+	6450 4650 6450 5950
+Wire Wire Line
+	6450 5950 6300 5950
+Wire Wire Line
+	4750 5750 5600 5750
+Wire Wire Line
+	5200 5850 5600 5850
+Wire Wire Line
+	4850 5950 5600 5950
+Wire Wire Line
+	5300 6050 5600 6050
+Wire Wire Line
+	4950 6150 5600 6150
+Wire Wire Line
+	5400 6250 5600 6250
+Wire Wire Line
+	5050 6350 5600 6350
+Wire Wire Line
+	5500 6450 5600 6450
+Connection ~ 5500 3150
+Wire Wire Line
+	6500 6250 6300 6250
+Wire Wire Line
+	6300 6350 6500 6350
+Wire Wire Line
+	6500 6350 6500 6450
+Wire Wire Line
+	6500 6050 6500 6150
+Wire Wire Line
+	6500 6150 6300 6150
+Wire Wire Line
+	2550 3700 2600 3700
+Wire Wire Line
+	2600 3700 2600 4650
+Wire Wire Line
+	2600 4650 6450 4650
+Connection ~ 6450 4950
+Wire Wire Line
+	2550 3600 5500 3600
+Connection ~ 5500 3600
+Wire Wire Line
+	2550 3500 5400 3500
+Connection ~ 5400 3500
+Wire Wire Line
+	2550 3400 5200 3400
+Connection ~ 5200 3400
+Wire Wire Line
+	2550 3300 3600 3300
+Connection ~ 3600 3300
+Wire Wire Line
+	2550 3200 4400 3200
+Connection ~ 4400 3200
+Wire Wire Line
+	2550 3100 3400 3100
+Connection ~ 3400 3100
+Wire Wire Line
+	2550 3000 4300 3000
+Connection ~ 4300 3000
+Wire Wire Line
+	2550 2900 3300 2900
+Connection ~ 3300 2900
+Wire Wire Line
+	2550 2800 3200 2800
+Connection ~ 3200 2800
+Wire Wire Line
+	2550 2700 4100 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	2550 2600 3100 2600
+Connection ~ 3100 2600
+Wire Wire Line
+	2550 2500 4000 2500
+Connection ~ 4000 2500
+Wire Wire Line
+	2550 2400 3900 2400
+Connection ~ 3900 2400
+Wire Wire Line
+	1600 2600 1650 2600
+Wire Wire Line
+	1650 2600 1650 2500
+Wire Wire Line
+	1650 2500 1750 2500
+Wire Wire Line
+	1750 2400 1600 2400
+Wire Wire Line
+	3900 4000 2550 4000
+Connection ~ 3900 3550
+Wire Wire Line
+	2550 4100 4000 4100
+Connection ~ 4000 4100
+Wire Wire Line
+	2550 4200 4100 4200
+Connection ~ 4100 4200
+Wire Wire Line
+	4200 4300 2550 4300
+Connection ~ 4200 4050
+Wire Wire Line
+	3300 4400 2550 4400
+Connection ~ 3300 4150
+Wire Wire Line
+	4400 4500 2550 4500
+Connection ~ 4400 4250
+Wire Wire Line
+	2550 4600 4600 4600
+Connection ~ 4600 4600
+Wire Wire Line
+	2550 4700 5200 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	2550 4800 5300 4800
+Connection ~ 5300 4800
+Wire Wire Line
+	2550 4900 4950 4900
+Connection ~ 4950 4900
+Wire Wire Line
+	2550 5000 5400 5000
+Connection ~ 5400 5000
+Wire Wire Line
+	2550 5100 5500 5100
+Connection ~ 5500 5100
+$Comp
+L Conn_01x08 J104
+U 1 1 6111D898
+P 1550 4300
+F 0 "J104" H 1550 4700 50  0000 C CNN
+F 1 "Conn_01x08" H 1550 3800 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 1450 4600 50  0001 C CNN
+F 3 "" H 1550 4300 50  0001 C CNN
+	1    1550 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J125
+U 1 1 610D8D03
+P 1250 4300
+F 0 "J125" H 1250 4700 50  0000 C CNN
+F 1 "Conn_01x08" H 1250 3800 50  0001 C CNN
+F 2 "footprints:PH_1x8" H 1150 4600 50  0001 C CNN
+F 3 "" H 1250 4300 50  0001 C CNN
+	1    1250 4300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4000 1750 4000
+Wire Wire Line
+	1750 4100 1450 4100
+Wire Wire Line
+	1450 4200 1750 4200
+Wire Wire Line
+	1750 4300 1450 4300
+Wire Wire Line
+	1450 4400 1750 4400
+Wire Wire Line
+	1750 4500 1450 4500
+Wire Wire Line
+	1450 4600 1750 4600
+Wire Wire Line
+	1750 4700 1450 4700
+$EndSCHEMATC
